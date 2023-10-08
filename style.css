@@ -1,114 +1,110 @@
-:root{
-    --green: #16db93;
-    --green-dark: #13bc7e;
-    --light-grey: #f1f4f6;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-*{
-    font-family: 'Roboto', sans-serif;
+:root {
+  --green: #16db93;
+  --green-dark: #13bc7e;
+  --light-grey: #f1f4f6;
+}
+* {
+  font-family: "Roboto", sans-serif;
 }
 
 /* misc stylings */
-ul li{
-    list-style-type: none;
+.container {
+  max-width: 1200px;
 }
-.container{
-    max-width: 1200px;
+.display-1 {
+  letter-spacing: 1px;
 }
-.display-1{
-    letter-spacing: 1px;
+.bg-green {
+  background-color: var(--green) !important;
 }
-.bg-green{
-    background-color: var(--green)!important;
+.btn {
+  border: 2px solid #fff;
+  border-radius: 1.5rem;
+  padding: 0.6rem 0;
+  width: 160px;
 }
-.bg-grey{
-    background-color: var(--light-grey);
+.bg-grey {
+  background-color: var(--light-grey);
 }
-.text-green{
-    color: var(--green);
+.circle-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--green);
 }
-.btn{
-    border: 2px solid #fff;
-    border-radius: 1.5rem;
-    padding: 0.6rem 0;
-    width: 160px;
+.lh-lg {
+  line-height: 1.7 !important;
 }
-.btn-green{
-    background-color: var(--green);
-    color: #fff;
-    padding: 0.55rem 0;
-    width: 140px;
+.btn-green {
+  background-color: var(--green);
+  color: #fff;
+  padding: 0.55rem 0;
+  width: 140px;
 }
-.btn-green:hover{
-    color: var(--green);
-    background: #fff;
-    border-color: var(--green);
+.btn-green:hover {
+  color: var(--green);
+  background-color: #fff;
+  border-color: var(--green);
 }
-.lh-lg{
-    line-height: 1.7!important;
-}
-.circle-icon{
-    width:55px;
-    height: 55px;
-    border-radius: 50%;
-    background-color: var(--green);
+.text-green {
+  color: var(--green);
 }
 
 /* header */
-header{
-    height: 100vh;
+header {
+  height: 100vh;
 }
-.navbar-brand .fa{
-    font-size: 1.3rem;
+.navbar-brand .fa {
+  font-size: 1.3rem;
 }
-.nav-icons p{
-    font-size: 1rem;
-    margin-right: 0.6rem;
+.nav-icons p {
+  font-size: 1rem;
+  margin-right: 0.6rem;
 }
-.nav-icons{
-    font-size: 1.2rem;
+.btn-header:hover {
+  background-color: #fff;
+  color: var(--green) !important;
 }
-.btn-header:hover{
-    background-color: #fff;
-    color: var(--green)!important;
-}
-.phone-img img{
-    width: 500px;
+.phone-img img {
+  width: 500px;
 }
 
-/* section 6 */
-#sec-6{
-    background: linear-gradient(rgba(22, 219, 147, 0.9), rgba(22, 219, 147, 0.9)), url(images/section-6-bg.jpg) center/cover no-repeat;
+/* Section 6 */
+#sec-6 {
+  background: linear-gradient(rgba(22, 219, 147, 0.9), rgba(22, 219, 147, 0.9)),
+    url(images/section-6-bg.jpg) center/cover no-repeat;
 }
-#sec-6 .circle-icon{
-    width: 95px;
-    height: 95px;
-}
-
-/* section 7 */
-#sec-7 .card{
-    border: none;
+#sec-6 .circle-icon {
+  width: 95px;
+  height: 95px;
 }
 
-/* section 8 */
-#sec-8 .carousel-item img{
-    width: 180px!important;
+/* Section 7 */
+#sec-7 .card {
+  border: none;
 }
 
-/* section 9 */
-.pricing-item{
-    border-radius: 0.3rem;
-    overflow: hidden;
-    max-width: 340px;
+/* Section 8 */
+#sec-8 .carousel-item img {
+  width: 180px!important;
 }
-.pricing-title{
-    background-color: var(--green-dark);
+
+/* Section 9 */
+.pricing-item {
+  border-radius: 0.3rem;
+  overflow: hidden;
+  max-width: 340px;
 }
-.pricing-price, .pricing-item ul li{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 0.9rem 0;
+.pricing-title {
+  background-color: var(--green-dark);
 }
-.pricing-item .btn:hover{
-    background: transparent!important;
-    color: #fff;
+.pricing-price, .pricing-item ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 0.9rem 0;
+}
+.pricing-item .btn:hover {
+  background-color: transparent!important;
+  color: #fff;
 }
